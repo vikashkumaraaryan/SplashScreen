@@ -1,6 +1,8 @@
 package com.example.splashscreen
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,11 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left , systemBars.top , systemBars.right , systemBars.bottom)
             insets
         }
+        var a=findViewById<Button>(R.id.butt)
+            a.setOnClickListener {
+              a.setText("vikash")
+                Toast.makeText(this , "changed text" , Toast.LENGTH_SHORT).show()
+            }
+        
     }
 }
